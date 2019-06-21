@@ -1,0 +1,13 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+body{
+    height: -webkit-fill-available;
+    
+}
+.bg-center{    
+    text-align:center;
+    min-width: 100%;
+    min-height: 100%;
+}

@@ -1,0 +1,30 @@
+<div class="central-app">
+  <div class="body-app">
+    <div>
+      <div class="menu">        
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <input #myInput (input)="transform(myInput.value)" placeholder="Search task" type="text">
+      <img class="person-image" src="./assets/img/images.jpeg" alt="">
+    </div>
+    <div>
+      <h2>
+        Friday, 26
+      </h2>
+      <span>Taks</span>
+      <ng-container *ngFor="let todo of todos">
+        <app-todo [dados]="todo"></app-todo>
+      </ng-container>
+    </div>
+  </div>
+  <div *ngIf="!addNew" class="footer-button">
+    <button (click)="addNew = !addNew"> ADD NEW TASK</button>
+  </div>
+
+  <div [ngClass]="{'upSide': addNew}" class="add-new-task">
+    <input #inputTodo [(ngModel)]="inputModel" type="text" placeholder="Insert new todo here!">
+    <button (click)="addTodo(inputTodo.value);">ADD</button>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="todo">
+  <div class="mark" (click)="todo.status = !todo.status" [ngClass]="{'click': todo.status}">
+
+  </div>
+  <div class="description">
+    {{todo.description}}
+  </div>
+  <div class="menu-todo">
+    ···
+  </div>
+</div>

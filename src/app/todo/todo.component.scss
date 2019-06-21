@@ -1,0 +1,42 @@
+.todo{
+    outline: none;
+    background-color: #72727275;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    height: 50px;        
+    color: #FFF;    
+    display: flex;
+    margin-top: 14px;
+    .mark{
+        &.click{
+            background-color:#00a8b0;
+
+        }
+        cursor: pointer;
+        margin-left: 14px;
+        margin-right: 14px;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #3a9eff;
+        border-radius: 50%;
+        display:  inline-block;
+        margin-bottom: auto;
+        margin-top: auto;
+
+    }
+    .description{
+        display:  inline-block;
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-right: auto;
+    }
+    .menu-todo{
+        margin-right: 14px;
+        display: inline-block;
+        margin-bottom: auto;
+        margin-top: auto;
+        cursor: pointer;
+        font-size: 28px
+    }
+}
